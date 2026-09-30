@@ -1,0 +1,64 @@
+{
+  "contacts": [
+    {
+      "contact_id": "ql_dt",
+      "unit_name": "Phòng Quản lý đào tạo",
+      "responsible_person": "TS. Lê Anh Đức",
+      "position": "Trưởng phòng",
+      "email": "ducla@neu.edu.vn",
+      "phone": null,
+      "location": "Phòng A1-210",
+      "website": "https://daotao.neu.edu.vn",
+      "topics": ["quy_che_dao_tao", "dang_ky_hoc", "thi_cu", "tot_nghiep", "hoc_vu"],
+      "when_to_contact": "Khi cần hỗ trợ về quy trình, thủ tục học tập, học vụ chính quy."
+    },
+    {
+      "contact_id": "ctct_qlsv",
+      "unit_name": "Phòng Công tác chính trị & Quản lý sinh viên",
+      "responsible_person": "ThS. Nguyễn Thị Thanh Thuý",
+      "position": "Chuyên viên",
+      "email": "thuyntt@neu.edu.vn",
+      "phone": null,
+      "location": "Phòng A1-302",
+      "website": "https://ctct.neu.edu.vn",
+      "topics": ["hoc_bong", "diem_ren_luyen", "tuan_sinh_hoat_cong_dan", "ky_tuc_xa"],
+      "when_to_contact": "Khi cần hỗ trợ về chế độ chính sách, rèn luyện, học bổng và đời sống sinh viên."
+    },
+    {
+      "contact_id": "tai_chinh_ke_toan",
+      "unit_name": "Phòng Tài chính kế toán",
+      "responsible_person": "ThS. Phạm Đức Bình",
+      "position": "Chuyên viên",
+      "email": "binhpd@neu.edu.vn",
+      "phone": null,
+      "location": "Nhà A1, tầng 2",
+      "website": "https://tckt.neu.edu.vn",
+      "topics": ["hoc_phi", "le_phi", "hoan_phi", "hoa_don_dien_tu"],
+      "when_to_contact": "Khi cần giải đáp các vấn đề tài chính cá nhân liên quan đến học phí."
+    },
+    {
+      "contact_id": "quan_ly_khoa_hoc",
+      "unit_name": "Phòng Quản lý khoa học",
+      "responsible_person": "TS. Phạm Hương Thảo",
+      "position": "Chuyên viên",
+      "email": "phamhuongthao@neu.edu.vn",
+      "phone": null,
+      "location": "Phòng A1-212",
+      "website": "https://qlkh.neu.edu.vn",
+      "topics": ["nghien_cuu_khoa_hoc_sinh_vien"],
+      "when_to_contact": "Khi tham gia các đề tài nghiên cứu khoa học hoặc hội thảo sinh viên."
+    },
+    {
+      "contact_id": "tu_van_tuyen_sinh",
+      "unit_name": "Trung tâm Tư vấn tuyển sinh",
+      "responsible_person": "Bộ phận tư vấn",
+      "position": null,
+      "email": "tuyensinh@neu.edu.vn",
+      "phone": null,
+      "location": "Nhà A1",
+      "website": "https://ai.neu.edu.vn/tuyen-sinh/welcome",
+      "topics": ["tuyen_sinh", "diem_chuan", "phuong_thuc_xet_tuyen"],
+      "when_to_contact": "Trước khi trở thành sinh viên chính thức hoặc cần thông tin xét tuyển."
+    }
+  ]
+}
