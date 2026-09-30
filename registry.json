@@ -1,0 +1,140 @@
+{
+  "nganh": {
+    "path": "data/processed/tables/nganh.csv",
+    "primary_key": "Manganh",
+    "name_columns": [
+      "Tennganh"
+    ],
+    "pii_columns": [],
+    "hidden_columns": [],
+    "display_columns": [
+      "Manganh",
+      "Tennganh",
+      "Nam",
+      "LoaiXetTuyen",
+      "Diemchuan",
+      "ThangDiem",
+      "GhiChuHeSo",
+      "Chitieu"
+    ],
+    "column_labels": {
+      "Manganh": "Mã ngành",
+      "Tennganh": "Tên ngành",
+      "Nam": "Năm",
+      "LoaiXetTuyen": "Phương thức xét tuyển",
+      "Diemchuan": "Điểm chuẩn",
+      "ThangDiem": "Thang điểm",
+      "GhiChuHeSo": "Ghi chú hệ số",
+      "Chitieu": "Chỉ tiêu",
+      "Tohopmonxettuyen": "Tổ hợp môn xét tuyển"
+    },
+    "disambiguating_columns": [
+      "LoaiXetTuyen",
+      "ThangDiem"
+    ],
+    "categorical_filters": {
+      "LoaiXetTuyen": {
+        "chuẩn": "Chuan",
+        "chuan": "Chuan",
+        "diem thi": "Chuan",
+        "điểm thi": "Chuan",
+        "thpt": "THPT",
+        "xtkh": "XTKH",
+        "xét tuyển kết hợp": "XTKH",
+        "xet tuyen ket hop": "XTKH"
+      }
+    },
+    "has_related_text_corpus": false,
+    "description": "Danh sách ngành đào tạo, điểm chuẩn và chỉ tiêu theo năm (2015-2025).",
+    "extra_instructions": "Khi so sánh/tìm max hoặc min điểm chuẩn, MẶC ĐỊNH chỉ so sánh các dòng có ThangDiem == 30 (trừ khi người dùng hỏi rõ về nhóm nhân hệ số môn). Không so sánh trực tiếp điểm thang 30 với thang 40 vì không cùng đơn vị."
+  },
+  "giangvien": {
+    "path": "data/processed/tables/giangvien.csv",
+    "primary_key": "email",
+    "name_columns": [
+      "name",
+      "name_eg",
+      "official_name_vi",
+      "official_name_en"
+    ],
+    "pii_columns": [
+      "home_adress"
+    ],
+    "hidden_columns": [
+      "Unnamed: 2",
+      "dob",
+      "department_level",
+      "name_eg",
+      "official_name_vi",
+      "official_name_en",
+      "official_name_en_unique",
+      "name_extension"
+    ],
+    "display_columns": [
+      "email",
+      "name",
+      "gender",
+      "academic_title",
+      "academic_title_year",
+      "degree",
+      "degree_year",
+      "academic_position",
+      "position",
+      "mobile",
+      "department",
+      "linh_vuc_chuyen_sau"
+    ],
+    "column_labels": {
+      "email": "Email",
+      "name": "Họ tên",
+      "gender": "Giới tính",
+      "academic_title": "Học hàm",
+      "degree": "Học vị",
+      "academic_position": "Ngạch/hạng giảng viên",
+      "position": "Chức vụ",
+      "mobile": "Số điện thoại",
+      "department": "Đơn vị công tác",
+      "linh_vuc_chuyen_sau": "Lĩnh vực chuyên sâu"
+    },
+    "role_columns": [
+      "academic_position",
+      "position"
+    ],
+    "group_columns": [
+      "department"
+    ],
+    "has_related_text_corpus": true,
+    "description": "Danh sách giảng viên: chức vụ, học hàm/học vị, đơn vị công tác.",
+    "extra_instructions": "QUAN TRỌNG - phân biệt 2 cột dễ nhầm: cột 'position' chứa CHỨC VỤ QUẢN LÝ (Trưởng khoa, Giám đốc, Phó viện trưởng, Trưởng phòng, Hiệu trưởng, Chánh văn phòng...) - dùng cột này khi câu hỏi hỏi về 'chức vụ quản lý'/'chức vụ lãnh đạo'. Cột 'academic_position' chứa NGẠCH/HẠNG GIẢNG VIÊN theo quy định nhà nước (Giảng viên hạng III, Giảng viên cao cấp...) - đây KHÔNG PHẢI chức vụ quản lý, tuyệt đối không dùng cột này khi được hỏi về chức vụ quản lý. LƯU Ý QUAN TRỌNG KHÁC: 2 cột này KHÔNG loại trừ nhau - 1 người có giá trị ở cột 'academic_position' NGHĨA LÀ người đó LÀ giảng viên (thuộc biên chế giảng viên), DÙ ĐỒNG THỜI người đó CÓ THỂ giữ thêm 1 chức vụ quản lý ở cột 'position' (vd Hiệu trưởng, Chánh văn phòng). TUYỆT ĐỐI KHÔNG kết luận '1 người không phải giảng viên' chỉ vì cột 'position' của họ có giá trị là 1 chức vụ quản lý - phải kiểm tra đúng cột 'academic_position' để xác định ai LÀ giảng viên, không suy diễn từ cột 'position'.",
+    "column_value_aliases": {
+      "position": {
+        "hiệu trưởng": "Giám đốc Đại học"
+      }
+    },
+    "disambiguating_columns": [],
+    "categorical_filters": {},
+    "column_dtypes": {
+      "email": "string",
+      "name": "string",
+      "Unnamed: 2": "string",
+      "dob": "string",
+      "gender": "string",
+      "academic_title": "string",
+      "academic_title_year": "int",
+      "degree": "string",
+      "degree_year": "int",
+      "academic_position": "string",
+      "position": "string",
+      "home_adress": "string",
+      "mobile": "string",
+      "department": "string",
+      "linh_vuc_chuyen_sau": "string",
+      "department_level": "string",
+      "name_eg": "string",
+      "official_name_vi": "string",
+      "official_name_en": "string",
+      "official_name_en_unique": "string",
+      "name_extension": "string"
+    }
+  }
+}
