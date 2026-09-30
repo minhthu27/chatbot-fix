@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "followup_rules": {
+    "keywords": [
+      "đó",
+      "này",
+      "vậy",
+      "thêm",
+      "chi tiết hơn",
+      "còn gì",
+      "nữa không",
+      "kể thêm",
+      "còn nữa"
+    ],
+    "pronouns": [
+      "thầy ấy",
+      "cô ấy",
+      "anh ấy",
+      "chị ấy",
+      "người đó",
+      "ngành đó",
+      "khoa đó"
+    ]
+  },
+  "pii_keywords": [
+    "dia chi nha",
+    "dia chi ca nhan",
+    "dia chi rieng",
+    "nha rieng"
+  ],
+  "thresholds": {
+    "duyet_similarity": 0.88,
+    "lien_quan_similarity": 0.45
+  }
+}
